@@ -1,0 +1,370 @@
+/* ---------------------- */
+/* products jumbotron */
+/* ---------------------- */
+.about-jumbotron {
+  background-color: #111518;
+  padding: 60px 0;
+  text-align: center;
+  background: url('../image/home/home-jumbotron.png') no-repeat center center/cover;
+}
+
+.about-jumbotron h2 {
+  font-size: 3.5rem;
+  line-height: 2px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 0;
+  padding-top: 20px;
+  color: #ffffff;
+  text-align: left;
+  padding: 20px;
+}
+
+.about-breadcrumb {
+  list-style: none; 
+  gap: 5px; 
+  padding-top: 200px;
+  margin: 0; 
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.about-breadcrumb li {
+  display: inline; 
+  color: white;
+  font-size: 16px;
+}
+
+.about-breadcrumb a {
+  color: inherit;
+  text-decoration: none; 
+}
+
+.about-breadcrumb li:not(:last-child)::after {
+  content: ">";
+  margin: 0 5px;
+  color: inherit; 
+}
+
+.about-breadcrumb li:last-child a {
+  font-weight: bold; 
+}
+
+.breadcrumb-about a {
+  color: #FFCD05;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb-about a:hover {
+  color: #ffa805;
+}
+
+
+
+@media (max-width: 768px) {
+  .about-jumbotron h2 {
+      font-size: 3rem;
+  }
+
+  .about-jumbotron p {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-jumbotron h2 {
+      font-size: 2rem;
+  }
+  .about-breadcrumb li {
+      font-size: 1rem;
+  }
+}
+/* ---------------------- */
+/* End of products jumbotron */
+/* ---------------------- */
+
+/* -------------------- */
+/* Our Ambition */
+/* ------------------ */
+.ambition-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 50px;
+  padding: 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.ambition-heading-title {
+  grid-column: span 2; 
+  text-align: center;
+  color: black;
+  margin-bottom: 30px; 
+}
+
+.ambition-section {
+  display: flex;
+  align-items: center; 
+  gap: 20px; 
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.ambition-section i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px; 
+  height: 70px;
+  color: #ffca00;
+  border-radius: 50%;
+  flex-shrink: 0; 
+  font-size: 110px;
+  padding: 50px;
+}
+
+.ambition-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ambition-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left; 
+  color: black;
+}
+
+.ambition-paragraph {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 10px; 
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .ambition-container {
+    grid-template-columns: 1fr; 
+  }
+
+  .ambition-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+/* ----------------- */
+/* End of Our Ambition */
+/* ------------------ */
+
+/* ---------------------- */
+/* Background Overlay */
+/* ----------------------- */
+.background-overlay-container {
+  display: flex;
+  flex-direction: row; 
+  align-items: flex-start;
+  gap: 20px;
+  padding: 60px;
+  flex-wrap: wrap;
+  background: url('../image/home/home-jumbotron.png') no-repeat center center/cover;
+}
+
+/* Gambar */
+.background-overlay-image-container {
+  flex: 1;
+  max-width: 600px;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Konten di sebelah gambar */
+.background-overlay-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Box dengan header dan paragraf */
+.background-overlay-box {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.background-overlay-header {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: left;
+}
+
+.background-overlay-paragraph {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  text-align: left;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+/* Dua kolom dengan ikon */
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.background-overlay-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.background-overlay-column i {
+  font-size: 70px;
+  color: #ffca00;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.background-overlay-column i:hover {
+  transform: scale(1.5); 
+  color: #ffc107; 
+}
+
+.background-overlay-column h3 {
+  color: #ffffff;
+}
+
+.background-overlay-column p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .background-overlay-container {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .two-columns {
+    grid-template-columns: 1fr;
+  }
+}
+/* ----------------------- */
+/* End of Background Overlay */
+/* ---------------------- */
+
+/* ---------------------- */
+/* The Ceo */
+/* ---------------------- */
+.ceo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.ceo-judul {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.ceo-judul h1 {
+  margin-bottom: 5px;
+}
+
+.ceo-judul p {
+  margin-top: 0;
+}
+
+.ceo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.ceo {
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  overflow: hidden; 
+  position: relative;
+}
+
+.ceo img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease; 
+}
+
+.ceo:hover img {
+  transform: scale(1.1); 
+}
+
+.ceo h3 {
+  margin-top: 30px;
+  font-size: 25px;
+  text-align: center;
+  color: #333;
+}
+
+
+/* Responsif untuk tablet */
+@media (max-width: 768px) {
+  .ceo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsif untuk smartphone */
+@media (max-width: 480px) {
+  .ceo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ceo-product {
+    padding: 15px;
+  }
+}
+/* ----------------- */
+/* End of The Ceo */
+/* ------------------- */
+
+
+/* ---------------- */
+/* The Question */
+/* ---------------- */
+.background-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../image/about/gambar-3.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(60%);
+  z-index: -1; 
+}
+/* ---------------- */
+/* End of Question */
+/* ---------------- */

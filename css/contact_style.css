@@ -1,0 +1,293 @@
+/* ----------------- */
+/* Contact Us Jumbotron */
+/* --------------------- */
+.contact-jumbotron-text {
+  margin-top: 10px; 
+  text-align: left;
+  padding-left: 25px;
+  color: white;
+  font-size: 20px;
+}
+/* ----------------- */
+/* End of Contact Us Jumbotron */
+/* --------------------- */
+
+/* ------------------- */
+/* Form */
+/* ------------------- */
+.content-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 20px;
+  position: relative;
+  margin-top: -200px; 
+  z-index: 2; 
+}
+
+/* Kotak kiri */
+.left-box {
+  width: 50%;
+  max-width: 30%;
+  padding: 150px;
+  z-index: 1;
+}
+
+.left-box h3 {
+  font-size: 1.5rem;
+  color: #111518;
+  margin-bottom: 10px;
+  padding-top: 50px;
+}
+
+.left-box p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.icon-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #111518;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #ffcd05;
+}
+
+/* Kotak kanan */
+.right-box {
+  width: 50%;
+  position: relative;
+  z-index: 2; 
+  margin-top: -950px; 
+  left: 750px;
+}
+
+.form-box {
+  background-color: #FFCD05 !important;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h1 {
+  font-size: 2rem;
+  padding-top: 50px;
+}
+
+.form-box h3 {
+  font-size: 1rem;
+  color: #111518;
+  margin-bottom: 20px;
+}
+
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-box button {
+  width: 30%;
+  padding: 20px;
+  font-size: 1.2rem;
+  background-color: #111518;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-box button:hover {
+  background-color: #444;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .content-section {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 0; 
+  }
+
+  .left-box,
+  .right-box {
+    width: 100%;
+  }
+
+  .left-box {
+    margin-bottom: 30px;
+  }
+
+  .right-box {
+    margin-top: 0; 
+  }
+}
+/* ------------------- */
+/* End of Form */
+/* ------------------- */
+
+/* -------------------- */
+/* Nilai */
+/* -------------------- */
+.nilai-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  height: 80vh;
+}
+
+.nilai-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; 
+  max-width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc; 
+  border-radius: 20px;
+
+}
+
+.nilai-column {
+  flex: 1 1 calc(33.333% - 20px); 
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.nilai-icon {
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.nilai-column p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .nilai-columns {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nilai-column {
+    width: 100%;
+    max-width: none;
+  }
+}
+/* ------------------------- */
+/* End of Nilai */
+/* ------------------------- */
+
+
+/* -------------------- */
+/* Maps Section */
+/* -------------------- */
+.contact-container {
+  display: flex;
+  width: 100%; 
+  max-width: 100vw; 
+  margin: 0 auto; 
+  background-color: #0D0E10;
+}
+
+/* Map Box */
+.map-box {
+  flex: 1;
+  min-width: 300px;
+  height: 800px;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 100px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Form Box */
+.map-form-box {
+  flex: 1;
+  min-width: 300px;
+  height: 750px;
+  padding: 100px;
+  background: #0D0E10;
+  border-radius: 10px;
+}
+
+.map-form-box h1 {
+  color: #333;
+  font-size: 40px;
+  color: #FFFFFF;
+
+}
+
+.map-form-box p {
+  color: #ffffff;
+  padding-top: 60px;
+  font-size: 20px;
+
+}
+
+.map-form-box ul {
+  list-style-type: disc;
+  color: #ffffff;
+  font-size: 20px;
+  padding-top: 60px;
+}
+
+.map-form-box ul li {
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  padding-top: 60px;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; 
+    gap: 30px;
+    margin-top: 20px; 
+  }
+
+  .map-box,
+  .map-form-box {
+    width: 100%;
+  }
+}
+/* -------------------- */
+/* End of Maps Section */
+/* -------------------- */

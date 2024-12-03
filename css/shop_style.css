@@ -1,0 +1,185 @@
+/* ---------------------- */
+/* products jumbotron */
+/* ---------------------- */
+.products-jumbotron {
+  background-color: #111518;
+  padding: 60px 0;
+  text-align: center;
+  background: url('../image/home/home-jumbotron.png') no-repeat center center/cover;
+}
+
+.products-jumbotron h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 0;
+  padding-top: 20px;
+  color: #ffffff;
+  text-align: left;
+  padding: 20px;
+}
+
+.breadcrumb {
+  list-style: none; 
+  gap: 5px; 
+  padding-top: 200px;
+  margin: 0; 
+  text-align: left;
+}
+
+.breadcrumb li {
+  display: inline; 
+  color: white;
+  font-size: 16px;
+}
+
+.breadcrumb a {
+  color: inherit; 
+  text-decoration: none; 
+}
+
+.breadcrumb li:not(:last-child)::after {
+  content: ">"; 
+  margin: 0 5px;
+  color: inherit; 
+}
+
+.breadcrumb li:last-child a {
+  font-weight: bold; 
+}
+
+.breadcrumb-home a {
+  color: #FFCD05;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb-home a:hover {
+  color: #ffa805;
+}
+
+@media (max-width: 768px) {
+  .products-jumbotron h1 {
+      font-size: 3rem;
+  }
+
+  .products-jumbotron p {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-jumbotron h1 {
+      font-size: 2rem;
+  }
+  .breadcrumb li {
+      font-size: 1rem;
+  }
+}
+/* ---------------------- */
+/* End of products jumbotron */
+/* ---------------------- */
+
+/* ---------------------- */
+/* products */
+/* ---------------------- */
+.home-shop-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.home-shop-judul {
+  text-align: left;
+  padding-right: 600px;
+  margin-bottom: 15px;
+}
+
+.home-shop-judul h1 {
+  margin-bottom: 5px;
+}
+
+.home-shop-judul p {
+  margin-top: 0;
+}
+
+.home-shop-product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.home-shop-product {
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  overflow: hidden;
+  position: relative;
+}
+
+.home-shop-product img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease; 
+}
+
+.home-shop-product:hover img {
+  transform: scale(1.1); 
+}
+
+.home-shop-product h3 {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+.home-shop-product p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+.home-shop-product button {
+  background-color: #F4F6F8;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 19px;
+}
+
+.home-shop-product button:hover {
+  background-color: #FFCD05;
+  color: black;
+}
+
+/* Responsif untuk tablet */
+@media (max-width: 768px) {
+  .home-shop-product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsif untuk smartphone */
+@media (max-width: 480px) {
+  .home-shop-product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-shop-product {
+    padding: 15px;
+  }
+}
+/* ------------------- */
+/* End of Home Shop */
+/* --------------------- */
+

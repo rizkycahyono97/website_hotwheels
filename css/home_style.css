@@ -1,0 +1,784 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FDFDFD;
+}
+
+/* --------------- */
+/* Navbar */
+/* -------------- */
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;  
+}
+
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo-img {
+  height: 60px; 
+}
+
+.navbar .nav-menu {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  justify-content: center;
+  flex-grow: 1;
+  font-size: 17px;
+}
+
+.navbar .nav-menu li a {
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.7s ease, border-bottom 0.7s ease;
+}
+
+.navbar .nav-menu li a:hover {
+  background: transparent;
+  color: #ffca00; 
+  border-bottom: 2px solid #ffca00; 
+  border-radius: 0; 
+}
+
+.navbar .nav-icons {
+  display: flex;
+  gap: 50px;
+  padding-right: 50px;
+}
+
+.navbar .nav-icons i {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.navbar .nav-icons i:hover {
+  color: #ffca00;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+/* --------------- */
+/* End of Navbar */
+/* -------------- */
+
+/* ----------------- */
+/* Jumbotron */
+/* ----------------- */
+.home-jumbotron {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 50px 20px;
+  background: url('../image/home/home-jumbotron.png') no-repeat center center/cover;
+  background-color: #0D0E10;
+}
+
+.home-jumbotron-content {
+  max-width: 50%;
+}
+
+.home-jumbotron-content h1 {
+  font-size: 4rem;
+  margin: 0;
+  margin-left: 30px;
+  line-height: 90px;
+  color: #fff;
+}
+
+.cta-buttons {
+  margin-top: 20px;
+}
+
+.cta-button {
+  padding: 20px 40px;
+  margin-left: 30px;
+  background-color: #ffca00;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #e6b800;
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button.secondary {
+  background-color: transparent;
+  color: #ffca00;
+  border: 2px solid #ffca00;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-button.secondary:hover {
+  background-color: #ffca00;
+  color: #000;
+  border-color: #e6b800;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.home-jumbotron-text {
+  max-width: 40%;
+  font-size: 1.1rem;
+  line-height: 2;
+  color: #838e91;
+  margin-bottom: 150px;
+}
+/* ----------------- */
+/* End of Jumbotron */
+/* ----------------- */
+
+/* ----------------- */
+/* gambar bawah jumbotron */
+/* ------------------- */
+.image-section {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 50px 20px;
+}
+
+.image-container {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  position: relative;
+}
+
+.image-left {
+  width: 50%;
+  height: auto;
+  z-index: 1; 
+}
+
+.image-right {
+  width: 45%; 
+  height: auto;
+  position: absolute;
+  top: -400px;
+  right: 20px; 
+  z-index: 2;
+}
+
+@media (max-width: 1024px) {
+  .home-jumbotron {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .home-jumbotron-content h1 {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1.2;
+    margin-left: 0;
+  }
+
+  .cta-button {
+    padding: 15px 30px;
+    font-size: 0.9rem;
+    margin-left: 0;
+  }
+
+  .cta-button.secondary {
+    padding: 15px 30px;
+    font-size: 0.9rem;
+  }
+
+  .home-jumbotron-text {
+    max-width: 90%;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #838e91;
+    margin-bottom: 30px;
+  }
+}
+
+/* Responsif untuk layar lebih kecil (handphone) */
+@media (max-width: 768px) {
+  .home-jumbotron {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .home-jumbotron-content h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-left: 0;
+    line-height: 1.1;
+  }
+
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 0.8rem;
+    margin-left: 0;
+  }
+
+  .cta-button.secondary {
+    padding: 12px 24px;
+    font-size: 0.8rem;
+  }
+
+  .home-jumbotron-text {
+    max-width: 100%;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .image-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .image-left, .image-right {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .image-right {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
+/* -------------------- */
+/* End of gambar bawah jumbotron */
+/* --------------------- */
+
+/* ------------------- */
+/* Jenis mobil */
+/* ------------------- */
+.jenis-mobil-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: url('../image/home/home-jumbotron.png') no-repeat center center/cover;
+  margin-top: 80px;
+  width: 97%; 
+
+}
+
+.jenis-mobil-grid {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.jenis-mobil-grid div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.jenis-mobil-grid img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* icon */
+.features {
+  color: #fff;
+}
+
+.icon-jenis-mobil {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px; 
+}
+
+.icon-jenis-mobil i {
+  font-size: 80px; 
+  color: #ffca00;
+}
+
+.icon-jenis-mobil .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.icon-jenis-mobil h3 {
+  font-size: 30px;
+}
+
+.icon-jenis-mobil p {
+  margin-top: 5px; 
+  font-size: 17px;
+}
+
+
+/* Bike Categories */
+.bike-categories {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.bike-categories div {
+  width: 30%; 
+  text-align: center;
+  position: relative; 
+  overflow: hidden; 
+  border-radius: 10px; 
+}
+
+.bike-categories img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  transition: transform 0.3s ease; 
+  filter: brightness(60%);
+}
+
+.bike-categories div h3 {
+  position: absolute; 
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color: white;
+  font-size: 1.4rem;
+  z-index: 1; 
+}
+
+.bike-categories div p {
+  position: absolute; 
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color: white;
+  font-size: 1.2rem;
+  z-index: 1; 
+}
+
+.bike-categories div:hover img {
+  transform: scale(1.1);
+  filter: brightness(100%);
+}
+
+.bike-categories div:hover h3,
+.bike-categories div:hover p {
+  color: #fff;
+}
+
+/* Responsif */
+@media screen and (max-width: 768px) {
+  .jenis-mobil-container {
+    flex-direction: column;
+  }
+
+  .jenis-mobil-grid, .right {
+    width: 100%;
+  }
+
+  .bike-categories {
+    flex-direction: column;
+  }
+
+  .bike-categories div {
+    width: 100%;
+    margin-bottom: 20px; 
+  }
+}
+/* ------------------- */
+/* End of Jenis mobil */
+/* ------------------- */
+
+
+/* ------------------ */
+/* kata-kata */
+/* ----------------- */
+.kata-kata {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-image: url("../image/home/kata-kata.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  color: #ffffff;
+}
+
+.kata-kata::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.main-text,
+.small-text {
+  position: relative;
+  z-index: 2;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+.main-text {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.small-text {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+/* ----------------------- */
+/* End of kata-kata */
+/* ----------------------- */
+
+
+/* ---------------------- */
+/* Kenggulan produk */
+/* ----------------------- */
+.kenggulan-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  padding: 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.kenggulan-section {
+  display: flex;
+  align-items: center; 
+  gap: 20px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  background: url('../image/home/home-jumbotron.png') no-repeat center center/cover;
+}
+
+.kenggulan-section i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px; 
+  height: 70px;
+  color: #ffca00;
+  border-radius: 50%;
+  flex-shrink: 0; 
+  font-size: 110px;
+  padding: 50px;
+}
+
+.kenggulan-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left; 
+  color: #ffffff;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 10px; 
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .kenggulan-container {
+    grid-template-columns: 1fr; 
+  }
+
+  .kenggulan-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+/* ---------------------- */
+/* End Of Kenggulan produk */
+/* ----------------------- */
+
+
+/* ---------------------- */
+/* Question */
+/* ---------------------- */
+/* Background Container */
+.background-container {
+  position: relative;
+  padding: 50px 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+}
+
+.background-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../image/home/question.png');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(60%);
+  z-index: -1;
+}
+
+.question-container {
+  position: absolute;
+  top: 25%; 
+  right: 5%;
+  transform: translateY(-20%);
+  background-color: #FFCD05;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  width: 25%;
+  max-width: 600px;
+  padding: 50px;  
+  border-radius: 10px;
+  text-align: center;
+  color: #333;
+  height: 70%; 
+}
+
+
+
+.question-container h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.question-container h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.question-container p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: left;
+
+}
+
+.question-container button {
+  background-color: #0D0E10;
+  color: #fff;
+  border: none;
+  padding: 30px 50px;
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.question-container button:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .question-container {
+    width: 80%; 
+  }
+}
+/* ------------------ */
+/* End of Question */
+/* ------------------- */
+
+
+/* ------------------ */
+/* Footer */
+/* ------------------ */
+.footer {
+  position: relative;
+  width: 100%;
+  background: #0D0E10;
+  bottom: 0;
+  border-top: 2px solid #bfbfbf;
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer-col .links {
+  padding-left: 0; 
+  margin: 0; 
+}
+
+.footer-col .links li {
+  padding-left: 0; 
+  list-style: none;
+}
+
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.footer-col .links li a:hover {
+  color: #fff;
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489C6 ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+  color: #ccc;
+}
+
+ .footer-col form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #cecccc;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #afb6c7;
+}
+
+.footer-col .icons i:hover  {
+  color: #fff;
+}
+
+.footer-col i {
+  font-size: 60px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.footer-col i:hover {
+  color: #FFCD05;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .footer-col form {
+    display: block;
+  }
+
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}
+/* -------------------- */
+/* End of Footer */
+/* ------------------- */
+
